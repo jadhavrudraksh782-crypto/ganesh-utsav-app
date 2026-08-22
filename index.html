@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Utsav Donation </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginBox" class="login-box">
+
+    <h1>🔐 Admin Login</h1>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Username"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMessage"></p>
+
+</div>
+    
+    <div class="container"  id="mainApp">
+        <div class="dashboard">
+
+    <div class="dashboard-card">
+        <h3>💰 Total Collection</h3>
+        <p>₹<span id="dashboardTotal">0</span></p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>👥 Total Donors</h3>
+        <p><span id="dashboardDonors">0</span></p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>🧾 Total Receipts</h3>
+        <p><span id="dashboardReceipts">0</span></p>
+    </div>
+
+        </div>
+<h1>Ganesh Utasav 2026</h1>
+<h2>Donation Management System</h2>
+
+<form id="donationForm">
+
+<input type="text" id="name"
+placeholder="customer name" required>
+
+<input type="tel" id="mobile"
+placeholder="Mobile Number" required>
+
+<input type="number" id="amount"
+placeholder="donation amount" required>
+
+<input type="text" id="address"
+placeholder="Address">
+
+<select id="payment">
+<option value="Cash">Cash</option>
+<option value="UPI">UPI</option>
+</select>
+
+<button type="submit">Generate Recipt</button>
+
+</form>
+<div id="receipt"></div>
+<input
+    type="text"
+    id="search"
+    placeholder="🔍 Search by customer name..."
+>
+<h2 class="history-title">📋 Donation History</h2>
+<button onclick="exportCSV()">
+    📥 Download Donation Excel
+</button>
+
+<div class="total-box">
+    Total Collection: ₹<span id="totalAmount">0</span>
+</div>
+
+<table id="donationTable">
+    <thead>
+        <tr>
+            <th>Receipt</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Payment</th>
+        </tr>
+    </thead>
+
+    <tbody id="donationList"></tbody>
+</table>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

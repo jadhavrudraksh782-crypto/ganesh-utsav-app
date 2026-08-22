@@ -1,0 +1,197 @@
+.login-box {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.login-box h1 {
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+}
+
+#mainApp {
+    display: none;
+}
+
+#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background: #ff6b00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e85d00;
+}
+.receipt-box {
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px solid #ff6b00;
+    border-radius: 12px;
+    background: #fffaf5;
+}
+
+.receipt-box h2,
+.receipt-box h3 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.receipt-box p {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.print-btn {
+    background: #198754;
+    margin-top: 15px;
+}
+
+.print-btn:hover {
+    background: #146c43;
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dashboard-card {
+    padding: 18px;
+    border-radius: 12px;
+    background: #fff3e8;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .dashboard-card {
+        padding: 15px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Donation table ko mobile par scroll karne ke liye */
+    #donationTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .receipt-box {
+        padding: 15px;
+    }
+}
